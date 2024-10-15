@@ -1,0 +1,20 @@
+[package]
+edition = "2018"
+name = "include-cargo-toml2"
+version = "0.3.1"
+description = "Load properties of Cargo.toml at compile time"
+readme = "README.md"
+authors = ["slimboyfat <s1im80yf4t@gmail.com>"]
+keywords = ["macro", "version", "Cargo-toml", "compile-time", "parse"]
+categories = ["command-line-interface", "config", "development-tools::build-utils", "development-tools"]
+license-file = "LICENSE"
+repository = "https://github.com/slimboyfat/include-cargo-toml2"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "1"
+quote = "1"
+syn = "1"
+toml = "0"
